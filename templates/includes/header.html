@@ -1,0 +1,11 @@
+{% load static %}
+<header>
+  <img src="{% static 'img/logo.png' %}" height="50" alt="">
+  <nav>
+    <ul>
+      <li><a href="{% url 'blog:index' %}">Главная</a></li>
+      <li><a href="{% url 'pages:about' %}">О проекте</a></li>
+      <li><a href="{% url 'pages:rules' %}">Правила</a></li>
+    </ul>
+  </nav>
+</header>
