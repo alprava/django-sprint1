@@ -53,7 +53,7 @@ def index(request):
 
 def detail(request, id):
     template = 'blog/detail.html'
-    context = {'post': posts[id]}
+    context = {'post': posts[::-1]}
     return render(request, template, context)
 
 
